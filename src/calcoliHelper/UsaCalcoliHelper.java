@@ -16,10 +16,16 @@ public class UsaCalcoliHelper {
         System.out.println("Divisione " + divisione);
 
         BigDecimal dividendo = new BigDecimal("1.21");
+        BigDecimal dividendo1 = new BigDecimal("1.21");
         BigDecimal divisore = new BigDecimal("3.32");
 
         System.out.println(dividendo.add(divisore));
         System.out.println("Divisione: " + dividendo.divide(divisore, 4, RoundingMode.HALF_UP));
+
+        System.out.println(dividendo.equals(dividendo1));
+        System.out.println(dividendo.compareTo(dividendo1));
+        
+
         
     }
 }

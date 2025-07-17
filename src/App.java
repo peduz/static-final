@@ -40,5 +40,19 @@ public class App {
 
         Utility.increment();
         Utility.leggiConteggio();
+
+        Prova prova1 = new Prova();
+        Prova prova2 = new Prova();
+        System.out.println(prova1.equals(prova2));
+        prova2 = prova1;
+        System.out.println(prova1.equals(prova2));
+
+        prova1.setDescrizione("descrizioneSettataSuProva1");
+
+        System.out.println(prova2);
+
+        prova2.setDescrizione("cambioDescrizione");
+
+        System.out.println(prova1);
     }
 }
